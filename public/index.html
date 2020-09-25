@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div id="loader">
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+
+    <div id="menu__container">
+      <div data-menu="main">
+        <ul>
+          <li><button data-action="start">Start</button></li>
+          <li><button data-action="settings">Settings</button></li>
+        </ul>
+      </div>
+
+      <div data-menu="settings">
+        <ul>
+          <li><button data-action="foo">foo</button></li>
+          <li><button data-action="bar">bar</button></li>
+        </ul>
+      </div>
+
+      <div data-menu="pause">
+        <ul>
+          <li><button data-action="resume">Resume</button></li>
+        </ul>
+      </div>
+
+      <div data-menu="over">
+        <ul>
+          <li><button data-action="reset">Reset</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <script src="./build/bundle.js"></script>
+  </body>
+</html>

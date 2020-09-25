@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "@core/*": ["src/core/*"]
+    },
+    "moduleResolution": "node"
+  },
+  "exclude": ["node_modules", "dist"]
+}
